@@ -1,6 +1,9 @@
 # 🧠 MindSync - Stress Prediction System
 
-MindSync is a smart stress prediction system that uses machine learning to predict a user’s stress level based on calendar events. It supports both **live prediction** using Google Calendar and **offline testing** on static datasets.
+MindSync is a smart stress prediction system that uses machine learning to predict a user’s stress level based on calendar events.  
+It supports:  
+- **Live prediction** using Google Calendar API  
+- **Fallback mode** using a static JSON file (`fallback_events.json`) when the API is unavailable.
 
 ---
 
@@ -14,11 +17,12 @@ MindSync-StressPredictor/
 │   ├── evaluate_predictions.py
 │   └── check.py
 ├── data/
-│   └── dataset.csv
+│   ├── dataset.csv
+│   └── fallback_events.json   
 ├── googleAPI/
 │   ├── credentials.json
 │   ├── token.pickle
-│   └── fetch_predict.py
+│   └── fetch_predict.py       
 ├── pickle/
 │   ├── rf_model.p
 │   ├── vectorizer_summary.p
@@ -29,6 +33,7 @@ MindSync-StressPredictor/
 │   ├── *.png (visuals)
 ├── frontend/
 │   └── dashboard.py
+
 ```
 
 ---
@@ -102,6 +107,8 @@ This will:
 - Connect to today's Google Calendar events
 - Predict stress levels using the trained model
 - Save results to `output/calendar_events_today.csv`
+- If the API fails or returns no events, automatically load data/fallback_events.json
+
 
 ---
 
@@ -117,7 +124,10 @@ Use this to predict stress on static CSV data :
 ```bash
 python analysis/predict_model.py
 ```
+Input: data/dataset.csv
+Output: Results are saved to output/predicted_output.csv
 
+This mode is useful for testing the trained model offline using static CSV data.
 ---
 
 ## 🧾 Requirements
