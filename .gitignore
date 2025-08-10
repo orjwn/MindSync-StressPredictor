@@ -119,17 +119,5 @@ output/*.pdf
 .DS_Store
 Thumbs.db
 
-Add .gitignore with Python defaults and MindSync-specific rules
-- Includes standard Python ignores (cache, builds, virtual envs)
-- Ignores sensitive files (Google API credentials, tokens)
-- Keeps synthetic dataset but excludes real/private data
-- Ignores generated model artifacts and output files
 
-git add .gitignore
-git commit -m "Add .gitignore with Python defaults and MindSync-specific rules
-- Includes standard Python ignores (cache, builds, virtual envs)
-- Ignores sensitive files (Google API credentials, tokens)
-- Keeps synthetic dataset but excludes real/private data
-- Ignores generated model artifacts and output files"
-git push
 
