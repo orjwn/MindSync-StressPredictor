@@ -27,7 +27,7 @@ st.title("🧠 MindSync Stress Dashboard")
 if st.button("🔁 Refresh Calendar "):
     result = os.system(f"python {BACKEND_SCRIPT}")
     if result == 0:
-        st.success("✅ Calendar and predictions updated. Please refresh the dashboard.")
+        st.success(" Calendar and predictions updated.")
     else:
         st.error("❌ Failed to run backend script. Check paths and environment.")
 
@@ -58,7 +58,7 @@ else:
 if df.empty:
     st.subheader("📈 Stress Evaluation")
     st.success("🎉 No events today!")
-    st.info("✅ Enjoy your day. No stress detected.")
+    st.info(" Enjoy your day. No stress detected.")
 else:
     total_score = df["predicted_stress_level"].sum()
     level, suggestion = classify_score(total_score)

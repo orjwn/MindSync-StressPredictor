@@ -1,0 +1,32 @@
+[
+  {
+    "event_id": 301,
+    "summary": "Project stand-up (online)",
+    "stress_level": 1.0,
+    "location": 0,
+    "duration": 30,
+    "start_date_time": "2025-08-10T09:00:00Z",
+    "end_date_time": "2025-08-10T09:30:00Z",
+    "morning": 1
+  },
+  {
+    "event_id": 302,
+    "summary": "Deep work: model tuning",
+    "stress_level": 2.0,
+    "location": 1,
+    "duration": 60,
+    "start_date_time": "2025-08-10T13:00:00Z",
+    "end_date_time": "2025-08-10T14:00:00Z",
+    "morning": 0
+  },
+  {
+    "event_id": 303,
+    "summary": "Team sync: release planning",
+    "stress_level": 3.0,
+    "location": 1,
+    "duration": 90,
+    "start_date_time": "2025-08-10T16:30:00Z",
+    "end_date_time": "2025-08-10T18:00:00Z",
+    "morning": 0
+  }
+]
