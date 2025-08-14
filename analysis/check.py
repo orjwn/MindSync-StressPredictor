@@ -30,5 +30,5 @@ print(feature_df.head(20))
 
 # === Save full list to CSV ===
 feature_df.to_csv("MindSync-StressPredictor/data/model_feature_importances.csv", index=False)
-print("✅ Feature importances saved to MindSync-StressPredictor/data/model_feature_importances.csv")
+print("Feature importances saved to MindSync-StressPredictor/data/model_feature_importances.csv")
 
