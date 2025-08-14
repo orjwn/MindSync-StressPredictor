@@ -20,6 +20,6 @@ report = classification_report(y_true, y_pred, zero_division=0)
 conf_matrix = confusion_matrix(y_true, y_pred)
 
 # === Print Evaluation Results ===
-print(f"✅ Accuracy: {round(accuracy * 100, 2)}%")
-print("\n📊 Classification Report:\n", report)
-print("\n🧮 Confusion Matrix:\n", conf_matrix)
+print(f"Accuracy: {round(accuracy * 100, 2)}%")
+print("\n Classification Report:\n", report)
+print("\n Confusion Matrix:\n", conf_matrix)
