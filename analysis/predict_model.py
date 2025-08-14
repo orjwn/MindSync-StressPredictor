@@ -28,4 +28,4 @@ df["predicted_stress_level"] = predictions
 
 # === Save ===
 df.to_csv("MindSync-StressPredictor/output/predicted_output.csv", index=False)
-print("✅ Predictions completed. Output saved to output/predicted_output.csv")
+print(" Predictions completed. Output saved to output/predicted_output.csv")
