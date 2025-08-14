@@ -29,7 +29,7 @@ if st.button("🔁 Refresh Calendar "):
     if result == 0:
         st.success(" Calendar and predictions updated.")
     else:
-        st.error("❌ Failed to run backend script. Check paths and environment.")
+        st.error(" Failed to run backend script. Check paths and environment.")
 
 # === Load and display predictions ===
 if not os.path.exists(DATA_PATH):
